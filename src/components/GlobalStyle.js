@@ -1,40 +1,4 @@
 import styled, { createGlobalStyle, css } from "styled-components/macro";
-
-export const ResetStyle = createGlobalStyle`
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-ul, ol {
-  margin: 0;
-  line-height: 1.5;
-  padding-left: 1.5em;
-}
-
-nav ul, nav ol {
-  list-style-type: none;
-  padding: 0;
-  font-weight: 700;
-}
-
-nav ul li, nav ol li {
-  padding: 0.5rem 0.75rem;
-}
-
-nav ul li a, nav ol li a {
-  text-decoration: none;
-  color: black;
-}
-`;
-
 export const Container = styled.div`
   width: 100%;
   padding-left: 0.75rem;

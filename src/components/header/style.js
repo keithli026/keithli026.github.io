@@ -31,6 +31,7 @@ export const MenuWrapper = styled.nav`
 export const MenuList = styled.ul`
   display: ${prop => prop.level_0 ? "flex" : "none"};
   flex-direction: ${prop => prop.level_0 ? "row" : "column"};
+  padding: 0.5rem 0;
 `;
 
 export const MenuItem = styled.li`

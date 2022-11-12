@@ -7,7 +7,7 @@ import { faFacebook, faInstagram, faTwitter, faYoutube } from "@fortawesome/free
 function Footer() {
     return (
         <>
-            <F.Footer>
+            <F.Footer id="footer-top">
                 <Container>
                     <Row>
                         <F.Column>
@@ -53,14 +53,14 @@ function Footer() {
                     </Row>
                 </Container>
             </F.Footer>
-            <F.Footer dark>
+            <F.Footer dark id="footer-bottom">
                 <Container flexbox>
                     <h2>Follow Us on</h2>
                     <div className="socialMedia">
-                        <a href="https://www.facebook.com/" target="_blank"><FontAwesomeIcon icon={ faFacebook } /></a>
-                        <a href="https://www.instagram.com/" target="_blank"><FontAwesomeIcon icon={ faInstagram } /></a>
-                        <a href="https://twitter.com/" target="_blank"><FontAwesomeIcon icon={ faTwitter } /></a>
-                        <a href="https://www.youtube.com/" target="_blank"><FontAwesomeIcon icon={ faYoutube } /></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faFacebook } /></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faInstagram } /></a>
+                        <a href="https://twitter.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faTwitter } /></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faYoutube } /></a>
                     </div>
                 </Container>
             </F.Footer>
