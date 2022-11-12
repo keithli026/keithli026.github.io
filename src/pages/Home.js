@@ -1,8 +1,8 @@
-import App from "../App";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Container, Row } from "../components/GlobalStyle";
+import { Container } from "../components/GlobalStyle";
 import "./home.scss";
 function Home() {
   var settings = {
@@ -57,7 +57,7 @@ function Home() {
           <iframe src="https://www.youtube.com/embed/pZxkV1nI1Bk" title="promo video"></iframe>
         </div>
       </Container>
-      <div className="promo_-ection2">
+      <div className="promo-section2">
         <Container>
           <div className="content">
             <h2>Why You Should Choose Us:</h2>
@@ -80,11 +80,14 @@ function Home() {
       <div className="our-services-content">
         <Container>
           <div className="services">
-            <img src="../General_Physiotherapy.png" alt="General Physiotherapy"></img>
+            <img src={process.env.PUBLIC_URL + "gp.png"} alt="General Physiotherapy"></img>
+            <p>General Physiotherapy</p>
+            <p>General physiotherapy for chronic and acute conditions.</p>
+            <Link to="/services/general-physiotherapy">Learn more</Link>
           </div>
         </Container>
       </div>
-      <App />
+
     </>
   );
 }

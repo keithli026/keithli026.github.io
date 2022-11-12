@@ -1,5 +1,5 @@
 import { useState, useLayoutEffect, useRef, useReducer, useEffect } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Container, Row } from "../GlobalStyle";
 import * as H from "./style";
 import "./header.scss";
@@ -28,12 +28,17 @@ function useWindowSize() {
 }
 
 function Header() {
+  let navigate = useNavigate();
   let location = useLocation();
   const [show, setShow] = useState(false);
   const showMenu = () => {
     setShow(!show);
   }
 
+  function changeLocation(placeToGo) {
+    navigate(placeToGo, { replace: true });
+    window.location.reload();
+  }
   const refHeader = useRef(null);
   const refMenu = useRef(null);
 
@@ -149,58 +154,58 @@ function Header() {
         <H.MobileMenuWrapper style={{ display: show ? "block" : "none" }} className="mnav">
           <H.MobileMenuList className="mlevel-0" ref={refMenu}>
             <H.MobileMenuItem style={{ paddingBottom: state.about ? "0" : "0.5rem" }}>
-              <Link to="/about" style={{ paddingBottom: state.about ? "0.875rem" : "0.375rem" }}>About About About About About About About</Link>
+              <Link to="/about" style={{ paddingBottom: state.about ? "0.875rem" : "0.375rem" }} onClick={() => changeLocation('/about')}>About</Link>
               <div className="dropdownBtn" onClick={showItemAbout} aria-expanded={state.about ? "true" : "false"}>
                 {state.about ? (<div className="up"></div>) : (<div className="down"></div>)}
               </div>
               <H.MobileMenuList className="mlevel-1" style={{ display: state.about ? "flex" : "none" }}>
                 <H.MobileMenuItem style={{ paddingBottom: state.ourteam ? "0" : "0.5rem" }}>
-                  <Link to="/ourteam" style={{ paddingBottom: state.ourteam ? "0.875rem" : "0.375rem" }}>Our Team</Link>
+                  <Link to="/about/our-team" style={{ paddingBottom: state.ourteam ? "0.875rem" : "0.375rem" }} onClick={() => changeLocation('/about/our-team')}>Our Team</Link>
                   <div className="dropdownBtn" onClick={showItemOurTeam} aria-expanded={state.ourteam ? "true" : "false"}>
                     {state.ourteam ? (<div className="up"></div>) : (<div className="down"></div>)}
                   </div>
                   <H.MobileMenuList className="mlevel-2" style={{ display: state.ourteam ? "flex" : "none" }}>
-                    <H.MobileMenuItem><Link to="/physiotherapists">Physiotherapists</Link></H.MobileMenuItem>
-                    <H.MobileMenuItem><Link to="/remedial-massage-therapist">Remedial Massage Therapist</Link></H.MobileMenuItem>
+                    <H.MobileMenuItem><Link to="/about/our-team/physiotherapists" onClick={() => changeLocation('/about/our-team/physiotherapists')}>Physiotherapists</Link></H.MobileMenuItem>
+                    <H.MobileMenuItem><Link to="/about/our-team/remedial-massage-therapist" onClick={() => changeLocation('/about/our-team/remedial-massage-therapist')}>Remedial Massage Therapist</Link></H.MobileMenuItem>
                   </H.MobileMenuList>
                 </H.MobileMenuItem>
-                <H.MobileMenuItem><Link to="/pricing">Pricing</Link></H.MobileMenuItem>
+                <H.MobileMenuItem><Link to="/pricing" onClick={() => changeLocation('/pricing')}>Pricing</Link></H.MobileMenuItem>
               </H.MobileMenuList>
             </H.MobileMenuItem>
             <H.MobileMenuItem style={{ paddingBottom: state.services ? "0" : "0.5rem" }}>
-              <Link to="/services" style={{ paddingBottom: state.services ? "0.875rem" : "0.375rem" }}>Services</Link>
+              <Link to="/services" style={{ paddingBottom: state.services ? "0.875rem" : "0.375rem" }} onClick={() => changeLocation('/services')}>Services</Link>
               <div className="dropdownBtn" onClick={showItemServices} aria-expanded={state.services ? "true" : "false"}>
                 {state.services ? (<div className="up"></div>) : (<div className="down"></div>)}
               </div>
               <H.MobileMenuList className="mlevel-1" style={{ display: state.services ? "flex" : "none" }}>
                 <H.MobileMenuItem style={{ paddingBottom: state.gp ? "0" : "0.5rem" }}>
-                  <Link to="/general-physiotherapy" style={{ paddingBottom: state.gp ? "0.875rem" : "0.375rem" }}>General Physiotherapy</Link>
+                  <Link to="/services/general-physiotherapy" style={{ paddingBottom: state.gp ? "0.875rem" : "0.375rem" }} onClick={() => changeLocation('/services/general-physiotherapy')}>General Physiotherapy</Link>
                   <div className="dropdownBtn" onClick={showItemGP} aria-expanded={state.gp ? "true" : "false"}>
                     {state.gp ? (<div className="up"></div>) : (<div className="down"></div>)}
                   </div>
                   <H.MobileMenuList className="mlevel-2" style={{ display: state.gp ? "flex" : "none" }}>
-                    <H.MobileMenuItem><Link to="/childrens-physiotherapy">Children's Physiotherapy</Link></H.MobileMenuItem>
-                    <H.MobileMenuItem><Link to="/DVA-physiotherapy">DVA Physiotherapy</Link></H.MobileMenuItem>
-                    <H.MobileMenuItem><Link to="/motor-vehicle-claims">Motor Vehicle Claims</Link></H.MobileMenuItem>
-                    <H.MobileMenuItem><Link to="/workcover-physiotherapy">Workcover Physiotherapy</Link></H.MobileMenuItem>
+                    <H.MobileMenuItem><Link to="/services/general-physiotherapy/childrens-physiotherapy" onClick={() => changeLocation('/services/general-physiotherapy/childrens-physiotherapy')}>Children's Physiotherapy</Link></H.MobileMenuItem>
+                    <H.MobileMenuItem><Link to="/services/general-physiotherapy/DVA-physiotherapy" onClick={() => changeLocation('/services/general-physiotherapy/DVA-physiotherapy')}>DVA Physiotherapy</Link></H.MobileMenuItem>
+                    <H.MobileMenuItem><Link to="/services/general-physiotherapy/motor-vehicle-claims" onClick={() => changeLocation('/services/general-physiotherapy/motor-vehicle-claims')}>Motor Vehicle Claims</Link></H.MobileMenuItem>
+                    <H.MobileMenuItem><Link to="/services/general-physiotherapy/workcover-physiotherapy" onClick={() => changeLocation('/services/general-physiotherapy/workcover-physiotherapy')}>Workcover Physiotherapy</Link></H.MobileMenuItem>
                   </H.MobileMenuList>
                 </H.MobileMenuItem>
                 <H.MobileMenuItem>
-                  <Link to="/sports-physiotherapy">Sports Physiotherapy</Link>
+                  <Link to="/services/sports-physiotherapy" onClick={() => changeLocation('/services/sports-physiotherapy')}>Sports Physiotherapy</Link>
                 </H.MobileMenuItem>
               </H.MobileMenuList>
             </H.MobileMenuItem>
             <H.MobileMenuItem>
-              <Link to="/conditions">Conditions</Link>
+              <Link to="/conditions" onClick={() => changeLocation('/conditions')}>Conditions</Link>
             </H.MobileMenuItem>
             <H.MobileMenuItem>
-              <Link to="/blog">Blog</Link>
+              <Link to="/blog" onClick={() => changeLocation('/blog')}>Blog</Link>
             </H.MobileMenuItem>
             <H.MobileMenuItem>
-              <Link to="/projects">Projects</Link>
+              <Link to="/projects" onClick={() => changeLocation('/projects')}>Projects</Link>
             </H.MobileMenuItem>
             <H.MobileMenuItem>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" onClick={() => changeLocation('/contact')}>Contact</Link>
             </H.MobileMenuItem>
           </H.MobileMenuList>
         </H.MobileMenuWrapper>

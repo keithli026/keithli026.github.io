@@ -1,6 +1,6 @@
 @import "../variable";
 .slick-slider {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     .slick-list {
         .slick-slide {
             .image-wrapper {
@@ -26,11 +26,16 @@
                     @media (min-width: $desktop-min-width-2) {
                         width: 50%;
                     }
+
+                    h2 {
+                        margin-bottom: 0;
+                        @media (min-width: $tablet-min-width-1) {
+                            margin-bottom: 20px;
+                        }
+                    }
                     p {
                         display: none;
-                    }
-                    @media (min-width: $tablet-min-width-1) {
-                        p {
+                        @media (min-width: $tablet-min-width-1) {
                             display: block;
                         }
                     }
@@ -103,11 +108,16 @@
 .promo-section {
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 30px 0;
     @media (min-width: $desktop-min-width) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    h2 {
+        @media (min-width: $desktop-min-width) {
+            text-align: center;
+        }
     }
     .content {
         @media (min-width: $desktop-min-width) {
@@ -136,11 +146,14 @@
 }
 
 .promo-section2 {
-    padding: 50px 0;
+    padding: 30px 0;
     color: white;
     background-color: $lightblue;
     h2 {
         color: white;
+        @media (min-width: $desktop-min-width) {
+            text-align: center;
+        }
     }
     ul {
         margin: 0;
@@ -148,9 +161,14 @@
 }
 
 .our-services-title {
+    padding: 20px 0;
     background-color: black;
     h2 {
         color: white;
+        margin-bottom: 0;
+        @media (min-width: $desktop-min-width) {
+            text-align: center;
+        }
     }
 }
 

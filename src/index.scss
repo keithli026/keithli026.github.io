@@ -40,11 +40,9 @@ h1 {
 h2 {
   font-size: 25px;
   margin-bottom: 20px;
-  text-align: center;
   @media (min-width: $desktop-min-width) {
     font-size: 37px;
     margin-bottom: 40px;
-    text-align: start;
   }
   @media (min-width: $desktop-min-width-2) {
     font-size: 45px;
@@ -75,6 +73,8 @@ h5 {
 ul, ol {
   font-size: 14px;
   letter-spacing: 0.4px;
+  margin-top: 0;
+  margin-bottom: 30px;
   @media (min-width: $desktop-min-width) {
     font-size: 16px;
   }
@@ -104,4 +104,8 @@ img {
 
 a:hover {
   color: $lightblue;
+}
+
+p {
+  margin-top: 0;
 }

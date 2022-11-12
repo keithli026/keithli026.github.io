@@ -10,7 +10,7 @@ function Footer() {
             <F.Footer id="footer-top">
                 <Container>
                     <Row>
-                        <F.Column>
+                        <F.Column className="footer-col">
                             <h2>Quick Link</h2>
                             <ul>
                                 <li>item 1</li>
@@ -20,7 +20,7 @@ function Footer() {
                                 <li>item 5</li>
                             </ul>
                         </F.Column>
-                        <F.Column>
+                        <F.Column className="footer-col">
                             <h2>Opening Hours</h2>
                             <ul>
                                 <li>Monday: 6am – 8pm</li>
@@ -32,7 +32,7 @@ function Footer() {
                                 <li>Sunday: Appt Only</li>
                             </ul>
                         </F.Column>
-                        <F.Column>
+                        <F.Column className="footer-col">
                             <h2>Address 1</h2>
                             <ul>
                                 <li>East Fremantle Clinic</li>
@@ -41,7 +41,7 @@ function Footer() {
                                 <li>East Fremantle 6158</li>
                             </ul>
                         </F.Column>
-                        <F.Column>
+                        <F.Column className="footer-col">
                             <h2>Address 2</h2>
                             <ul>
                                 <li>East Fremantle Clinic</li>

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
 import './index.scss';
-import App from './App';
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -28,7 +27,6 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Project from './pages/Project';
-import { ResetStyle } from './components/GlobalStyle';
 
 export default function MainApp() {
   return (
