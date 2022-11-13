@@ -80,10 +80,52 @@ function Home() {
       <div className="our-services-content">
         <Container>
           <div className="services">
-            <img src={process.env.PUBLIC_URL + "gp.png"} alt="General Physiotherapy"></img>
-            <p>General Physiotherapy</p>
-            <p>General physiotherapy for chronic and acute conditions.</p>
-            <Link to="/services/general-physiotherapy">Learn more</Link>
+            <div className="content">
+              <img src={process.env.PUBLIC_URL + "gp.png"} alt="General Physiotherapy"></img>
+              <h3>General Physiotherapy</h3>
+              <p>General physiotherapy for chronic and acute conditions.</p>
+            </div>
+            <Link to="/services/general-physiotherapy" className="button">Learn more</Link>
+          </div>
+          <div className="services">
+            <div className="content">
+              <img src={process.env.PUBLIC_URL + "dn.png"} alt="Dry Needling"></img>
+              <h3>Dry Needling</h3>
+              <p>Acupuncture needles applied directly to muscular trigger points to reduce muscle tone and improve blood flow.</p>
+            </div>
+            <Link to="/services/dry-needling" className="button">Learn more</Link>
+          </div>
+          <div className="services">
+            <div className="content">
+              <img src={process.env.PUBLIC_URL + "er.png"} alt="Exercise Rehabilitation"></img>
+              <h3>Exercise Rehabilitation</h3>
+              <p>Individually tailored and supervised exercises utilising our fully equipped gym, to help you get moving again after injury or surgery.</p>
+            </div>
+            <Link to="/services/exercise-rehabilitation" className="button">Learn more</Link>
+          </div>
+          <div className="services">
+            <div className="content">
+              <img src={process.env.PUBLIC_URL + "sp.png"} alt="Sports Physiotherapy"></img>
+              <h3>Sports Physiotherapy</h3>
+              <p>Our physiotherapists have experience in a range of sports including Australian Rules Football, Gridiron, Netball and Basketball.</p>
+            </div>
+            <Link to="/services/sports-physiotherapy" className="button">Learn more</Link>
+          </div>
+          <div className="services">
+            <div className="content">
+              <img src={process.env.PUBLIC_URL + "mt.png"} alt="Massage Therapy"></img>
+              <h3>Massage Therapy</h3>
+              <p>Utilising a range of techniques to improve circulation, blood flow, reduce muscle tension and improve joint mobility.</p>
+            </div>
+            <Link to="/services/massage-therapy" className="button">Learn more</Link>
+          </div>
+          <div className="services">
+            <div className="content">
+              <img src={process.env.PUBLIC_URL + "paa.png"} alt="Physiotherapy After a Car Accident"></img>
+              <h3>Physiotherapy After a Car Accident</h3>
+              <p>Your step by step guide to claiming your insurance and receiving treatment after your car accident.</p>
+            </div>
+            <Link to="/services/massage-therapy" className="button">Learn more</Link>
           </div>
         </Container>
       </div>

@@ -102,8 +102,22 @@ img {
   width: 100%;
 }
 
-a:hover {
-  color: $lightblue;
+a {
+  &:hover {
+    color: $lightblue;
+  }
+  &.button {
+    display: inline-block;
+    color: white;
+    background-color: $lightblue;
+    padding: 5px 20px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    &:hover {
+      background-color: $blue;
+    }
+  }
 }
 
 p {

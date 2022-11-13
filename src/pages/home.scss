@@ -173,5 +173,44 @@
 }
 
 .our-services-content {
-
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .services {
+            padding: 30px 0;
+            &:not(:last-child) {
+                border-bottom: 1px solid grey;
+                @media (min-width: $tablet-min-width) {
+                    border-bottom: none;
+                }
+            }
+            text-align: center;
+            @media (min-width: $tablet-min-width) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex-basis: 48%;
+            }
+            @media (min-width: $desktop-min-width) {
+                flex-basis: 32%;
+            }
+            .content {
+                img {
+                    width: auto;
+                    height: auto;
+                }
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    text-align: start;
+                }
+            }
+            .button {
+                width: fit-content;
+                margin: 0 auto;
+            }
+        }
+    }
 }
