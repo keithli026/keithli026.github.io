@@ -5,6 +5,11 @@
             color: white;
             font-size: 20px;
             margin-bottom: 10px;
+            @media (min-width: $desktop-min-width) {
+                font-size: 26px;
+                padding-bottom: 20px;
+                border-bottom: 2px solid $lightblue;
+            }
         }
         ul {
             list-style: none;

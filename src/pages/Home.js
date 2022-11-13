@@ -129,7 +129,45 @@ function Home() {
           </div>
         </Container>
       </div>
-
+      <div className="our-team-title">
+        <Container>
+          <h2>Our Team</h2>
+        </Container>
+      </div>
+      <div className="our-team-content">
+        <Container>
+          <div className="members">
+            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 1"></img>
+            <h3>Name 1</h3>
+            <p>Physiotherapist</p>
+          </div>
+          <div className="members">
+            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 2"></img>
+            <h3>Name 2</h3>
+            <p>Physiotherapist</p>
+          </div>
+          <div className="members">
+            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 3"></img>
+            <h3>Name 3</h3>
+            <p>Physiotherapist</p>
+          </div>
+          <div className="members">
+            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 4"></img>
+            <h3>Name 4</h3>
+            <p>Senior Physiotherapist</p>
+          </div>
+          <div className="members">
+            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 5"></img>
+            <h3>Name 5</h3>
+            <p>Senior Physiotherapist</p>
+          </div>
+          <div className="members">
+            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 6"></img>
+            <h3>Name 6</h3>
+            <p>Senior Physiotherapist</p>
+          </div>
+        </Container>
+      </div>
     </>
   );
 }
