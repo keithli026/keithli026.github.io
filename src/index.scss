@@ -105,8 +105,10 @@ img {
 }
 
 a {
-  &:hover {
-    color: $lightblue;
+  @media (min-width: $desktop-min-width) {
+    &:hover {
+      color: $lightblue;
+    }
   }
   &.button {
     display: inline-block;
@@ -116,8 +118,10 @@ a {
     text-decoration: none;
     border: 2px solid white;
     border-radius: 10px;
-    &:hover {
-      background-color: $blue;
+    @media (min-width: $desktop-min-width) {
+      &:hover {
+        background-color: $blue;
+      }
     }
   }
 }
@@ -141,6 +145,19 @@ p {
   }
 }
 
+.breadcrumb {
+  a {
+    text-decoration: none;
+    &.active {
+      &:last-child {
+        color: $lightblue;
+      }
+    }
+  }
+  > span {
+    margin: 0 10px;
+  }
+}
 
 .overviews {
   display: flex;
@@ -166,8 +183,10 @@ p {
       text-align: center;
       background-color: grey;
       padding: 10px 0;
-      &:hover {
-        color: $lightblue;
+      @media (min-width: $desktop-min-width) {
+        &:hover {
+          color: $lightblue;
+        }
       }
     }
   }
