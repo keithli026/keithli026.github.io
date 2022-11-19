@@ -100,6 +100,8 @@ nav ul li a, nav ol li a {
 
 img {
   width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 a {
@@ -122,4 +124,51 @@ a {
 
 p {
   margin-top: 0;
+}
+
+.table_wrapper {
+  overflow-x: auto;
+  table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-spacing: 0;
+    border: 0.5px solid grey;
+    th, td {
+      text-align: start;
+      border: 0.5px solid grey;
+      padding: 0.5rem;
+    }
+  }
+}
+
+
+.overviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  @media (min-width: $desktop-min-width) {
+    margin-bottom: 50px;
+  }
+  .overview {
+    position: relative;
+    margin-bottom: 30px;
+    @media (min-width: $desktop-min-width) {
+      flex-basis: 49%;
+    }
+    h2 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+      background-color: grey;
+      padding: 10px 0;
+      &:hover {
+        color: $lightblue;
+      }
+    }
+  }
 }

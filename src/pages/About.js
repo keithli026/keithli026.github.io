@@ -1,10 +1,8 @@
 import { Outlet } from "react-router-dom";
+import { Container } from "../GlobalStyle";
 function About() {
     return (
-        <>
-            <h1>About Us</h1>
-            <Outlet />
-        </>
+        <Outlet />
     );
 }
 

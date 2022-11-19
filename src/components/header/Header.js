@@ -1,6 +1,6 @@
 import { useState, useLayoutEffect, useRef, useReducer, useEffect } from "react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
-import { Container, Row } from "../GlobalStyle";
+import { Container, Row } from "../../GlobalStyle";
 import * as H from "./style";
 import "./header.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

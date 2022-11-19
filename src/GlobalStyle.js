@@ -42,5 +42,3 @@ export const Row = styled.div`
     align-items: center;
   `}
 `;
-
-

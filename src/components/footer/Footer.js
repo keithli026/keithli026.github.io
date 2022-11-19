@@ -1,4 +1,4 @@
-import { Container, Row } from "../GlobalStyle";
+import { Container, Row } from "../../GlobalStyle";
 import * as F from "./style";
 import "./footer.scss";
 import { FontAwesomeIcon } from  "@fortawesome/react-fontawesome";

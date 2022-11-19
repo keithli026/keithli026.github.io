@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Container } from "../components/GlobalStyle";
+import { Container } from "../GlobalStyle";
 import "./home.scss";
 function Home() {
   var settings = {

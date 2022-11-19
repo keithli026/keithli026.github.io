@@ -1,0 +1,24 @@
+@import "../variable";
+table {
+    min-width: $tablet-min-width;
+    tr {
+        &:nth-of-type(odd) {
+            background-color: rgba(0,0,0,0.05);
+        }
+        @media (min-width: $desktop-min-width) {
+            &:hover {
+                background-color: $lightblue;
+                color: white;
+                font-weight: 700;
+            }
+        }
+        th {
+            &:first-child {
+                width: 75%;
+            }
+            &:nth-child(2) {
+                width: 25%;
+            }
+        }
+    }
+}
