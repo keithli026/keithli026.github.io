@@ -9,6 +9,7 @@ import AboutOverview from './pages/AboutOverview';
 import OurTeam from './pages/OurTeam';
 import OurTeamOverview from './pages/OurTeamOverview';
 import Physiotherapists from './pages/Physiotherapists';
+import PhysiotherapistsOverview from './pages/physiotherapistsOverview';
 import Physiotherapist from './pages/Physiotherapist';
 import RemedialMassageTherapist from './pages/RemedialMassageTherapist';
 import Pricing from './pages/Pricing';
@@ -39,7 +40,7 @@ export default function MainApp() {
             <Route path="our-team" element={<OurTeam />}>
               <Route index element={<OurTeamOverview />} />
               <Route path="physiotherapists" element={<Physiotherapists/>}>
-                <Route index element={<div>Select a physiotherapist</div>} />
+                <Route index element={<PhysiotherapistsOverview />} />
                 <Route path=":physiotherapistId" element={<Physiotherapist />}/>
               </Route>
               <Route path="remedial-massage-therapist" element={<RemedialMassageTherapist />}></Route>

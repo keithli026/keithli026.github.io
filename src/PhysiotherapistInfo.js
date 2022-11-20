@@ -1,21 +1,39 @@
 var physiotherapists = [
     {
         pid: 1,
-        client: "CityU College of Science",
-        dueDate: "31/12/2022",
-        price: "$100000",
+        name: "John Lee",
+        gender: "M",
+        title: "physiotherapist"
     },
     {
         pid: 2,
-        client: "HKU Department of Physics",
-        dueDate: "31/12/2022",
-        price: "$200000",
+        firstName: "Carrie Lam",
+        gender: "F",
+        title: "physiotherapist"
     },
     {
         pid: 3,
-        client: "Environmental Protection Department",
-        dueDate: "31/12/2022",
-        price: "$300000",
+        firstName: "CY Leung",
+        gender: "M",
+        title: "physiotherapist"
+    },
+    {
+        pid: 4,
+        firstName: "Donald Tsang",
+        gender: "M",
+        title: "physiotherapist"
+    },
+    {
+        pid: 5,
+        firstName: "CH Tung",
+        gender: "M",
+        title: "physiotherapist"
+    },
+    {
+        pid: 6,
+        firstName: "Paul Chan",
+        gender: "M",
+        title: "senior physiotherapist"
     }
 ];
 

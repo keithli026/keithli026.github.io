@@ -2,6 +2,7 @@ import { NavLink, Outlet, useSearchParams, useLocation } from "react-router-dom"
 import { getProjects } from "../ProjectInfo";
 function QueryNavLink({to, ...props}) {
     let location = useLocation();
+    console.log(location);
     return <NavLink to={to + location.search} {...props} />;
 }
 function Projects() {

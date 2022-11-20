@@ -6,10 +6,6 @@ import "../index.scss";
 
 function About() {
     const breadcrumbs = useBreadcrumbs();
-    console.log(breadcrumbs.length);
-    let activeStyle = {
-        color: "#1cb7ef"
-    };
     return (
         <>
             <Container>
@@ -18,9 +14,6 @@ function About() {
                         <React.Fragment key={match.pathname}> 
                             <NavLink
                                 to={match.pathname}
-                                // style={({ isActive }) =>
-                                //     isActive ? activeStyle : undefined
-                                // }
                             >
                                 {breadcrumb}
                             </NavLink>

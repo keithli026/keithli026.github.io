@@ -1,6 +1,8 @@
+import { Outlet } from "react-router-dom";
+
 function Physiotherapists() {
-    return(
-        <h1>Physiotherapists</h1>
+    return (
+        <Outlet/>
     );
 }
 
