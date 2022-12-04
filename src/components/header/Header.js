@@ -8,26 +8,26 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const desktopMinWidth = 992;
 
-function QueryNavLink({to, ...props}) {
+const QueryNavLink = ({to, ...props}) => {
   let location = useLocation();
   return <NavLink to={to + location.search} {...props} />;
 }
 
-function useWindowSize() {
-    const [size, setSize] = useState([0,0]);
-    useLayoutEffect(() => {
-        function updateSize() {
-            setSize([window.innerWidth, window.innerHeight]);
-        }
-        window.addEventListener('resize', updateSize);
-        return () => {
-            window.removeEventListener('resize', updateSize);
-        }
-    }, []);
-    return size;
+const useWindowSize = () => {
+  const [size, setSize] = useState([0,0]);
+  useLayoutEffect(() => {
+      function updateSize() {
+          setSize([window.innerWidth, window.innerHeight]);
+      }
+      window.addEventListener('resize', updateSize);
+      return () => {
+          window.removeEventListener('resize', updateSize);
+      }
+  }, []);
+  return size;
 }
 
-function Header() {
+const Header = () => {
   let navigate = useNavigate();
   let location = useLocation();
   const [show, setShow] = useState(false);
@@ -35,7 +35,7 @@ function Header() {
     setShow(!show);
   }
 
-  function changeLocation(placeToGo) {
+  const changeLocation = (placeToGo) => {
     navigate(placeToGo, { replace: true });
     window.location.reload();
   }

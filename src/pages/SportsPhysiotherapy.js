@@ -1,4 +1,4 @@
-function SportsPhysiotherapy() {
+const SportsPhysiotherapy = () => {
     return(
         <h1>SportsPhysiotherapy</h1>
     );

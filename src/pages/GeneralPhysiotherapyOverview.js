@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-function GeneralPhysiotherapyOverview() {
+const GeneralPhysiotherapyOverview = () => {
     return(
         <>
             <h1>General Physiotherapy Overview</h1>

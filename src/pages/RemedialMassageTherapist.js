@@ -1,4 +1,4 @@
-function RemedialMassageTherapist() {
+const RemedialMassageTherapist = () => {
     return(
         <h1>Remedial Massage Therapist</h1>
     );

@@ -1,4 +1,4 @@
-function ServicesOverview() {
+const ServicesOverview = () => {
     return(
         <h1>ServicesOverview</h1>
     );

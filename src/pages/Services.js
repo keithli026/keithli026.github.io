@@ -1,8 +1,14 @@
+import React from 'react';
 import { Outlet } from "react-router-dom";
-function Services() {
-    return(
+import Breadcrumb from "../components/Breadcrumb";
+import { Container } from "../GlobalStyle";
+
+const Services = () => {
+    return (
         <>
-            <h1>Services</h1>
+            <Container>
+                <Breadcrumb />
+            </Container>
             <Outlet />
         </>
     );

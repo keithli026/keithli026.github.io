@@ -1,0 +1,25 @@
+.search {
+    position: relative;
+    width: fit-content;
+    .search_input {
+        letter-spacing: 1px;
+        font-size: 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 10px 50px 10px 20px;
+    }
+    .search_button {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        bottom: 0;
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        padding: 0;
+    }
+}
+
+.highlight {
+    background-color: rgba(0,0,0,0.25);
+}

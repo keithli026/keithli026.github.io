@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import SearchBar from "../components/SearchBar";
 import ListPage from "../components/ListPage";
 
-function PhysiotherapistsOverview() {
+const PhysiotherapistsOverview = () => {
     const physiotherapists = getPhysiotherapists();
     const [searchParams, setSearchParams] = useSearchParams();
     const [posts, setPosts] = useState([]);
@@ -19,7 +19,6 @@ function PhysiotherapistsOverview() {
             return json;
         }).then(json => {
             setSearchResults(json);
-            // console.log(posts);
         })
     }, []);
 
@@ -27,8 +26,8 @@ function PhysiotherapistsOverview() {
         <>
             <Container>
                 <div>Select a physiotherapist</div>
-                <SearchBar posts={posts} setSearchResults={setSearchResults} />
-                <ListPage searchResults={searchResults}></ListPage>
+                <SearchBar posts={posts} setSearchResults={setSearchResults} searchResults={searchResults}/>
+                {/* <ListPage searchResults={searchResults} /> */}
                 <div className="physiotherapists_list">
                     <div>
                         <div className="members">

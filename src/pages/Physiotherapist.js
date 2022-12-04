@@ -1,7 +1,7 @@
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { getPhysiotherapist, deletePhysiotherapist } from "../PhysiotherapistInfo";
 
-function Physiotherapist() {
+const Physiotherapist = () => {
     let navigate = useNavigate();
     let location = useLocation();
     let params = useParams();

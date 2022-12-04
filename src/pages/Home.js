@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Container } from "../GlobalStyle";
 import "./home.scss";
-function Home() {
+const Home = () => {
   var settings = {
     dots: true,
     infinite: true,

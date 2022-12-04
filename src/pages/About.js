@@ -1,26 +1,13 @@
-import { Outlet, NavLink, Link} from "react-router-dom";
-import React from "react";
-import useBreadcrumbs from "use-react-router-breadcrumbs";
+import React from 'react';
+import { Outlet } from "react-router-dom";
 import { Container } from "../GlobalStyle";
-import "../index.scss";
+import Breadcrumb from "../components/Breadcrumb";
 
-function About() {
-    const breadcrumbs = useBreadcrumbs();
+const About = () => {
     return (
         <>
             <Container>
-                <nav className="breadcrumb">
-                    {breadcrumbs.map(({ match, breadcrumb }, index) => (
-                        <React.Fragment key={match.pathname}> 
-                            <NavLink
-                                to={match.pathname}
-                            >
-                                {breadcrumb}
-                            </NavLink>
-                            {index === breadcrumbs.length-1 ? null : (<span>/</span>)}
-                        </React.Fragment>
-                    ))}
-                </nav>
+                <Breadcrumb />
             </Container>
             <Outlet />
         </>

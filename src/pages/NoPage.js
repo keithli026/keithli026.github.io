@@ -1,4 +1,4 @@
-function NoPage() {
+const NoPage = () => {
     return <h1>404 Found</h1>;
 }
 

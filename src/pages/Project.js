@@ -1,7 +1,7 @@
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { getProject, deleteProject } from "../ProjectInfo";
 
-function Project() {
+const Project = () => {
     let navigate = useNavigate();
     let location = useLocation();
     let params = useParams();

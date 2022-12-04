@@ -1,6 +1,6 @@
 import { Container } from "../GlobalStyle";
 import { Link } from "react-router-dom";
-function OurTeamOverview() {
+const OurTeamOverview = () => {
     return(
         <>
         <Container className="overviews">

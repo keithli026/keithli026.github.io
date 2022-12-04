@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Container } from "../GlobalStyle";
-function OurTeam() {
+const OurTeam = () => {
     return(
         <Outlet />
     );

@@ -1,4 +1,4 @@
-function WorkcoverPhysiotherapy() {
+const WorkcoverPhysiotherapy = () => {
     return(
         <h1>Workcover Physiotherapy</h1>
     );

@@ -1,6 +1,6 @@
 import { Container } from "../GlobalStyle";
 import "./pricing.scss";
-function Pricing() {
+const Pricing = () => {
     return (
         <>
             <Container>
