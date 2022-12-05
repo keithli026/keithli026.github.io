@@ -3,37 +3,99 @@ var physiotherapists = [
         pid: 1,
         name: "John Lee",
         gender: "M",
-        title: "physiotherapist"
+        title: "physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
     },
     {
         pid: 2,
-        firstName: "Carrie Lam",
+        name: "Carrie Lam",
         gender: "F",
-        title: "physiotherapist"
+        title: "physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
     },
     {
         pid: 3,
-        firstName: "CY Leung",
+        name: "CY Leung",
         gender: "M",
-        title: "physiotherapist"
+        title: "physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
     },
     {
         pid: 4,
-        firstName: "Donald Tsang",
+        name: "Donald Tsang",
         gender: "M",
-        title: "physiotherapist"
+        title: "physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
     },
     {
         pid: 5,
-        firstName: "CH Tung",
+        name: "CH Tung",
         gender: "M",
-        title: "physiotherapist"
+        title: "physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
     },
     {
         pid: 6,
-        firstName: "Paul Chan",
+        name: "Paul Chan",
         gender: "M",
-        title: "senior physiotherapist"
+        title: "senior physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
+    },
+    {
+        pid: 7,
+        name: "John Tsang",
+        gender: "M",
+        title: "senior physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
+    },
+    {
+        pid: 8,
+        name: "Henry Tang",
+        gender: "M",
+        title: "senior physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
+    },
+    {
+        pid: 9,
+        name: "Antony Leung",
+        gender: "M",
+        title: "senior physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
+    },
+    {
+        pid: 10,
+        name: "Paul Lam",
+        gender: "M",
+        title: "physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
+    },
+    {
+        pid: 11,
+        name: "Teresa Cheng",
+        gender: "F",
+        title: "physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
+    },
+    {
+        pid: 12,
+        name: "Rimsky Yuen",
+        gender: "M",
+        title: "physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
+    },
+    {
+        pid: 13,
+        name: "SC Wong",
+        gender: "M",
+        title: "physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
+    }, 
+    {
+        pid: 14,
+        name: "Elsie Leung",
+        gender: "F",
+        title: "physiotherapist",
+        photo: process.env.PUBLIC_URL + "image_width_478.png"
     }
 ];
 

@@ -7,20 +7,26 @@ import ListPage from './ListPage';
 const SearchBar = ({ posts, setSearchResults, searchResults }) => {
     const handleSubmit = (e) => e.preventDefault();
     const [input, setInput] = useState("");
-    // console.log(input);
+    // const handleSearchChange = (e) => {
+    //     setInput(e.target.value);
+    //     if (!e.target.value) return setSearchResults(posts);
+    //     const resultArray = posts.filter(post => post.title.includes(e.target.value) || post.body.includes(e.target.value));
+    //     setSearchResults(resultArray);
+    // }
     const handleSearchChange = (e) => {
         setInput(e.target.value);
         if (!e.target.value) return setSearchResults(posts);
-        const resultArray = posts.filter(post => post.title.includes(e.target.value) || post.body.includes(e.target.value));
+        const resultArray = posts.filter(post => post.title.includes(e.target.value) || post.name.includes(e.target.value));
         setSearchResults(resultArray);
     }
-
+    console.log(searchResults, input);
     return (
         <>
             <form className="search" onSubmit={handleSubmit}>
                 <input
                     className="search_input"
                     type="text"
+                    placeholder="Search"
                     id="search"
                     onChange={handleSearchChange}
                 />
@@ -28,7 +34,7 @@ const SearchBar = ({ posts, setSearchResults, searchResults }) => {
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </button>
             </form>
-            <ListPage searchResults={searchResults} highlight={input}></ListPage>
+            <ListPage searchResults={searchResults} input={input}></ListPage>
         </>
     );
 }

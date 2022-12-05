@@ -6,62 +6,39 @@ import { getPosts } from "../api/axios";
 import { useState, useEffect } from "react";
 import SearchBar from "../components/SearchBar";
 import ListPage from "../components/ListPage";
+import { faCommentsDollar } from "@fortawesome/free-solid-svg-icons";
 
 const PhysiotherapistsOverview = () => {
     const physiotherapists = getPhysiotherapists();
     const [searchParams, setSearchParams] = useSearchParams();
     const [posts, setPosts] = useState([]);
     const [searchResults, setSearchResults] = useState([]);
-
+    
     useEffect(() => {
-        getPosts().then(json => {
-            setPosts(json);
-            return json;
-        }).then(json => {
-            setSearchResults(json);
-        })
+        // getPosts().then(json => {
+        //     setPosts(json);
+        //     return json;
+        // }).then(json => {
+        //     setSearchResults(json);
+        // })
+        setPosts(physiotherapists);
+        setSearchResults(physiotherapists);
     }, []);
-
+    console.log(posts, physiotherapists, searchResults);
     return (
         <>
             <Container>
-                <div>Select a physiotherapist</div>
-                <SearchBar posts={posts} setSearchResults={setSearchResults} searchResults={searchResults}/>
+                <SearchBar posts={posts} setSearchResults={setSearchResults} searchResults={searchResults} />
                 {/* <ListPage searchResults={searchResults} /> */}
-                <div className="physiotherapists_list">
-                    <div>
-                        <div className="members">
-                            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 1"></img>
-                            <h3>Name 1</h3>
-                            <p>Physiotherapist</p>
+                {/* <div className="physiotherapists_list">
+                    <div className="members_wrapper">{physiotherapists.map(physiotherapist => (
+                        <div className="members" key={physiotherapist.pid}>
+                            <img src={physiotherapist.photo} alt={physiotherapist.name}></img>
+                            <h3>{physiotherapist.name}</h3>
+                            <p>{physiotherapist.title}</p>
                         </div>
-                        <div className="members">
-                            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 2"></img>
-                            <h3>Name 2</h3>
-                            <p>Physiotherapist</p>
-                        </div>
-                        <div className="members">
-                            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 3"></img>
-                            <h3>Name 3</h3>
-                            <p>Physiotherapist</p>
-                        </div>
-                        <div className="members">
-                            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 4"></img>
-                            <h3>Name 4</h3>
-                            <p>Senior Physiotherapist</p>
-                        </div>
-                        <div className="members">
-                            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 5"></img>
-                            <h3>Name 5</h3>
-                            <p>Senior Physiotherapist</p>
-                        </div>
-                        <div className="members">
-                            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 6"></img>
-                            <h3>Name 6</h3>
-                            <p>Senior Physiotherapist</p>
-                        </div>
-                    </div>
-                </div>
+                    ))}</div>
+                </div> */}
             </Container>
         </>
     );
