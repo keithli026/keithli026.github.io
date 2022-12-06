@@ -16,10 +16,10 @@ const SearchBar = ({ posts, setSearchResults, searchResults }) => {
     const handleSearchChange = (e) => {
         setInput(e.target.value);
         if (!e.target.value) return setSearchResults(posts);
-        const resultArray = posts.filter(post => post.title.includes(e.target.value) || post.name.includes(e.target.value));
+        const resultArray = posts.filter(post => post.title.toLowerCase().includes(e.target.value.toLowerCase()) || post.name.toLowerCase().includes(e.target.value.toLowerCase()));
         setSearchResults(resultArray);
     }
-    console.log(searchResults, input);
+    // console.log(searchResults, input);
     return (
         <>
             <form className="search" onSubmit={handleSubmit}>

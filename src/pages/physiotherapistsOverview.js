@@ -24,7 +24,7 @@ const PhysiotherapistsOverview = () => {
         setPosts(physiotherapists);
         setSearchResults(physiotherapists);
     }, []);
-    console.log(posts, physiotherapists, searchResults);
+    // console.log(posts, physiotherapists, searchResults);
     return (
         <>
             <Container>

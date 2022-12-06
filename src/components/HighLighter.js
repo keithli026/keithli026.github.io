@@ -3,7 +3,6 @@ import React from "react";
 const HighLighter = ({ text, highlight, highlightedItemClass }) => {
   const parts = text.split(new RegExp(`(${highlight})`, "gi"));
   // console.log(`${highlight}`);
-  
   return (
     <>
       {parts.map((part, i) => {

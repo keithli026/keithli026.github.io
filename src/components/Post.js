@@ -2,7 +2,6 @@ import React, { useContext, useState, useEffect } from 'react'
 import HighLighter from './HighLighter'
 
 const Post = ({ mypost, input }) => {
-  console.log(input);
   return (
     // input.length > 1 ? 
     // (<div>
