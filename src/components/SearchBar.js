@@ -7,19 +7,12 @@ import ListPage from './ListPage';
 const SearchBar = ({ posts, setSearchResults, searchResults }) => {
     const handleSubmit = (e) => e.preventDefault();
     const [input, setInput] = useState("");
-    // const handleSearchChange = (e) => {
-    //     setInput(e.target.value);
-    //     if (!e.target.value) return setSearchResults(posts);
-    //     const resultArray = posts.filter(post => post.title.includes(e.target.value) || post.body.includes(e.target.value));
-    //     setSearchResults(resultArray);
-    // }
     const handleSearchChange = (e) => {
         setInput(e.target.value);
         if (!e.target.value) return setSearchResults(posts);
         const resultArray = posts.filter(post => post.title.toLowerCase().includes(e.target.value.toLowerCase()) || post.name.toLowerCase().includes(e.target.value.toLowerCase()));
         setSearchResults(resultArray);
     }
-    // console.log(searchResults, input);
     return (
         <>
             <form className="search" onSubmit={handleSubmit}>

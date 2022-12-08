@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Container } from "../GlobalStyle";
 import "./home.scss";
+import { getPhysiotherapists } from "../PhysiotherapistInfo";
 const Home = () => {
   var settings = {
     dots: true,
@@ -20,6 +21,7 @@ const Home = () => {
       }
     ]
   };
+  const physiotherapists = getPhysiotherapists();
   return (
     <>
       <Slider {...settings}>
@@ -136,35 +138,16 @@ const Home = () => {
       </div>
       <div className="our-team-content">
         <Container>
-          <div className="members">
-            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 1"></img>
-            <h3>Name 1</h3>
-            <p>Physiotherapist</p>
-          </div>
-          <div className="members">
-            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 2"></img>
-            <h3>Name 2</h3>
-            <p>Physiotherapist</p>
-          </div>
-          <div className="members">
-            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 3"></img>
-            <h3>Name 3</h3>
-            <p>Physiotherapist</p>
-          </div>
-          <div className="members">
-            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 4"></img>
-            <h3>Name 4</h3>
-            <p>Senior Physiotherapist</p>
-          </div>
-          <div className="members">
-            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 5"></img>
-            <h3>Name 5</h3>
-            <p>Senior Physiotherapist</p>
-          </div>
-          <div className="members">
-            <img src={process.env.PUBLIC_URL + "image_width_478.png"} alt="Name 6"></img>
-            <h3>Name 6</h3>
-            <p>Senior Physiotherapist</p>
+          <div className="members_wrapper {">
+            {physiotherapists.map((physiotherapist, i) => {
+              return(
+                <div className="members" key={i}>
+                  <img src={physiotherapist.photo} alt={physiotherapist.name}></img>
+                  <h3>{physiotherapist.name}</h3>
+                  <p>{physiotherapist.title}</p>
+                </div>
+              );
+            })}
           </div>
         </Container>
       </div>
