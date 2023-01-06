@@ -22,10 +22,11 @@ import DVAPhysiotherapy from './pages/DVAPhysiotherapy';
 import MotorVehicleClaims from './pages/MotorVehicleClaims';
 import WorkcoverPhysiotherapy from './pages/WorkcoverPhysiotherapy';
 import SportsPhysiotherapy from './pages/SportsPhysiotherapy';
+import UnderstandingThePains from './pages/UnderstandingThePains';
 import Conditions from "./pages/Conditions";
-import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import BookOnline from './pages/BookOnline';
 import NoPage from "./pages/NoPage";
 import Project from './pages/Project';
 
@@ -59,12 +60,13 @@ export default function MainApp() {
             <Route path="sports-physiotherapy" element={<SportsPhysiotherapy />}></Route>
           </Route>
           <Route path="conditions" element={<Conditions />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="projects" element={<Projects />}>
+          {/* <Route path="projects" element={<Projects />}>
             <Route index element={<div>Select a project</div>} />
             <Route path=":projectId" element={<Project />}/>
-          </Route>
+          </Route> */}
+          <Route path="understanding-the-pains" element={<UnderstandingThePains />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="book-online" element={<BookOnline />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

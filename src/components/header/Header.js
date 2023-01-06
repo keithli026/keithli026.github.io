@@ -135,14 +135,17 @@ const Header = () => {
                 <H.MenuItem>
                   <Link to="/conditions">Conditions</Link>
                 </H.MenuItem>
-                <H.MenuItem>
-                  <Link to="/blog">Blog</Link>
-                </H.MenuItem>
-                <H.MenuItem>
+                {/* <H.MenuItem>
                   <Link to="/projects">Projects</Link>
+                </H.MenuItem> */}
+                <H.MenuItem>
+                  <Link to="/understanding-the-pains">Understanding the Pains</Link>
                 </H.MenuItem>
                 <H.MenuItem>
                   <Link to="/contact">Contact</Link>
+                </H.MenuItem>
+                <H.MenuItem>
+                  <Link to="/book-online">Book Online</Link>
                 </H.MenuItem>
               </H.MenuList>
             </H.MenuWrapper>
@@ -198,14 +201,17 @@ const Header = () => {
             <H.MobileMenuItem>
               <Link to="/conditions" onClick={() => changeLocation('/conditions')}>Conditions</Link>
             </H.MobileMenuItem>
-            <H.MobileMenuItem>
-              <Link to="/blog" onClick={() => changeLocation('/blog')}>Blog</Link>
-            </H.MobileMenuItem>
-            <H.MobileMenuItem>
+            {/* <H.MobileMenuItem>
               <Link to="/projects" onClick={() => changeLocation('/projects')}>Projects</Link>
+            </H.MobileMenuItem> */}
+            <H.MobileMenuItem>
+              <Link to="/contact" onClick={() => changeLocation('/understanding-the-pains')}>Understanding the Pains</Link>
             </H.MobileMenuItem>
             <H.MobileMenuItem>
               <Link to="/contact" onClick={() => changeLocation('/contact')}>Contact</Link>
+            </H.MobileMenuItem>
+            <H.MobileMenuItem>
+              <Link to="/book-online" onClick={() => changeLocation('/book-online')}>Book Online</Link>
             </H.MobileMenuItem>
           </H.MobileMenuList>
         </H.MobileMenuWrapper>

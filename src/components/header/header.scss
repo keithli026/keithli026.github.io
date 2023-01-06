@@ -1,5 +1,9 @@
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
 #header {
-    z-index: 1;
+    z-index: 2;
     > div {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -9,15 +13,10 @@
                 &.expandable {
                     >a {
                         &::after {
-                            display: inline-block;
-                            content: "";
-                            vertical-align: initial;
-                            border-top: 0.4em solid;
-                            border-right: 0.4em solid transparent;
-                            border-bottom: 0;
-                            border-left: 0.4em solid transparent;
-                            margin-left: 0.8em;
-                            margin-bottom: 0.15em;
+                            font: var(--fa-font-solid);
+                            content: "\f078";
+                            font-size: 14px;
+                            margin-left: 10px;
                         }
                     }
                 }
@@ -38,6 +37,10 @@
             > li {
                 position: relative;
                 margin-left: 10px;
+                &:last-child {
+                    border: 2px solid #1cb7ef;
+                    border-radius: 10px;
+                }
                 > ul {
                     top: 100%;
                     left: 0;
@@ -45,15 +48,10 @@
                         &.expandable {
                             >a {
                                 &::after {
-                                    display: inline-block;
-                                    content: "";
-                                    vertical-align: initial;
-                                    border-top: 0.4em solid transparent;
-                                    border-right: 0;
-                                    border-bottom: 0.4em solid transparent;
-                                    border-left: 0.4em solid;
-                                    margin-left: 0.8em;
-                                    margin-bottom: 0;
+                                    font: var(--fa-font-solid);
+                                    content: "\f054";
+                                    font-size: 14px;
+                                    margin-left: 10px;
                                 }
                             }
                         }
@@ -88,21 +86,10 @@
                 text-align: end;
                 color: white;
                 > div.down {
-                    display: inline-block;
-                    vertical-align: middle;
-                    border-top: 0.5em solid;
-                    border-right: 0.5em solid transparent;
-                    border-bottom: 0;
-                    border-left: 0.5em solid transparent;
+                    @include fa-icon-solid($fa-var-chevron-down);
                 }
                 > div.up {
-                    display: inline-block;
-                    vertical-align: middle;
-                    border-top: 0;
-                    border-right: 0.5em solid transparent;
-                    border-bottom:  0.5em solid;
-                    border-left: 0.5em solid transparent;
-                    margin-bottom: 0.15em;
+                    @include fa-icon-solid($fa-var-chevron-up);
                 }
             }
             .mlevel-1 {

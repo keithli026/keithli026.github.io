@@ -8,16 +8,15 @@ const Physiotherapist = () => {
     let params = useParams();
     let physiotherapist = getPhysiotherapist(parseInt(params.physiotherapistId, 10));
     console.log(location, params.physiotherapistId);
-
     return (
         <>
             <Container>
                 <h1>Physiotherapist {params.physiotherapistId}</h1>
-                <img src={physiotherapist.photo} alt={physiotherapist.name}/>
+                <img src={physiotherapist.photo} alt={physiotherapist.name} />
                 <h1>{physiotherapist.name}</h1>
                 <div>{physiotherapist.title}</div>
                 <button
-                    onClick={()=> {
+                    onClick={() => {
                         deletePhysiotherapist(physiotherapist.pid);
                         navigate("/physiotherapist" + location.search);
                     }}

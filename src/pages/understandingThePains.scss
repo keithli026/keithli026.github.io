@@ -1,0 +1,104 @@
+@import "../variable";
+
+.bodychart {
+    background-image: url("../../public/bodychart_bg.jpg");
+    position: relative;
+    .image_wrapper {
+        @media (min-width: $tablet-min-width) {
+            width: 50%;
+            margin: auto;
+        }
+        img {
+            display: block;
+        }
+    }
+    .dots {
+        position: absolute;
+        height: 17px;
+        width: 17px;
+        img {
+            display: block;
+            width: inherit;
+            height: inherit;
+        }
+        &#dot1 {
+            top: 16.2%;
+            left: 46%;
+            @media (min-width: $tablet-min-width) {
+                left: 47.9%;
+            }
+        }
+    }
+
+    .shining_dots {
+        display: none;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        &.show {
+            display: block;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../../public/blue_dot.png");
+            height: 12px;
+            width: 12px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            height: auto;
+            border-top: 4px solid $lightblue;
+            z-index: -1;
+        }
+        img {
+            display: block;
+            width: inherit;
+            height: inherit;
+        }
+        &#shining_dot1 {
+            top: 15.8%;
+            left: 47.3%;
+            transform: rotate(-20deg);
+            &::before {
+                display: block;
+                top: 6px;
+                left: 305px;
+            }
+            &::after {
+                display: block;
+                width: 300px;
+                top: 38.2%;
+                left: 50%;
+            }
+            &:hover {
+                // background-color: blue;
+            }
+        }
+
+    }
+
+    .textboxs {
+        display: none;
+        color: white;
+        max-width: 300px;
+        position: absolute;
+        &.show {
+            display: block;
+        }
+        .title {
+            font-size: 30px;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        &#box1 {
+            top: 7%;
+            right: 4%;
+        }
+    }
+
+
+}
