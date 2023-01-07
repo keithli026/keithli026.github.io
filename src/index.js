@@ -12,7 +12,7 @@ import Physiotherapists from './pages/Physiotherapists';
 import PhysiotherapistsOverview from './pages/physiotherapistsOverview';
 import Physiotherapist from './pages/Physiotherapist';
 import RemedialMassageTherapist from './pages/RemedialMassageTherapist';
-import Pricing from './pages/Pricing';
+import Fees from './pages/Fees';
 import Services from "./pages/Services";
 import ServicesOverview from './pages/ServicesOverview';
 import GeneralPhysiotherapy from './pages/GeneralPhysiotherapy';
@@ -22,13 +22,10 @@ import DVAPhysiotherapy from './pages/DVAPhysiotherapy';
 import MotorVehicleClaims from './pages/MotorVehicleClaims';
 import WorkcoverPhysiotherapy from './pages/WorkcoverPhysiotherapy';
 import SportsPhysiotherapy from './pages/SportsPhysiotherapy';
-import UnderstandingThePains from './pages/UnderstandingThePains';
 import Conditions from "./pages/Conditions";
-import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import BookOnline from './pages/BookOnline';
 import NoPage from "./pages/NoPage";
-import Project from './pages/Project';
 
 export default function MainApp() {
   return (
@@ -46,7 +43,6 @@ export default function MainApp() {
               </Route>
               <Route path="remedial-massage-therapist" element={<RemedialMassageTherapist />}></Route>
             </Route>
-            <Route path="pricing" element={<Pricing />} />
           </Route>
           <Route path="services" element={<Services />}>
             <Route index element={<ServicesOverview />} />
@@ -59,12 +55,8 @@ export default function MainApp() {
             </Route>
             <Route path="sports-physiotherapy" element={<SportsPhysiotherapy />}></Route>
           </Route>
+          <Route path="fees" element={<Fees />} />
           <Route path="conditions" element={<Conditions />} />
-          {/* <Route path="projects" element={<Projects />}>
-            <Route index element={<div>Select a project</div>} />
-            <Route path=":projectId" element={<Project />}/>
-          </Route> */}
-          <Route path="understanding-the-pains" element={<UnderstandingThePains />} />
           <Route path="contact" element={<Contact />} />
           <Route path="book-online" element={<BookOnline />} />
           <Route path="*" element={<NoPage />} />

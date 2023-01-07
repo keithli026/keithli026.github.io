@@ -1,10 +1,10 @@
 import { Container } from "../GlobalStyle";
-import "./pricing.scss";
-const Pricing = () => {
+import "./fees.scss";
+const Fees = () => {
     return (
         <>
             <Container>
-                <h1>Pricing</h1>
+                <h1>Fees</h1>
                 <div className="table_wrapper">
                     <table>
                         <thead>
@@ -154,4 +154,4 @@ const Pricing = () => {
     );
 }
 
-export default Pricing;
+export default Fees;

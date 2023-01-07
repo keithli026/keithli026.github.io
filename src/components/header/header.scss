@@ -1,8 +1,9 @@
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-
+@import "../../variable";
 #header {
+    background-color: $black;
     z-index: 2;
     > div {
         padding-top: 10px;
@@ -20,11 +21,13 @@
                         }
                     }
                 }
-            
+                a {
+                    color: $white;
+                }
                 ul {
                     white-space: nowrap;
                     position: absolute;
-                    background-color: #f2f2f2;
+                    background-color: $black;
                 }
                 &:hover {
                     > ul {
@@ -38,7 +41,7 @@
                 position: relative;
                 margin-left: 10px;
                 &:last-child {
-                    border: 2px solid #1cb7ef;
+                    border: 2px solid $lightblue;
                     border-radius: 10px;
                 }
                 > ul {
@@ -66,11 +69,12 @@
         .menuBtn {
             svg {
                 font-size: 30px;
+                color: $white;
             }
         }
     }
     .mnav {
-        background-color: #1cb7ef;
+        background-color: $lightblue;
         .mlevel-0 {
             overflow-y: auto;
             a {

@@ -1,0 +1,211 @@
+@import "../variable";
+
+.bodychart {
+    background-image: url("../../public/bodychart_bg.jpg");
+    position: relative;
+    margin-bottom: 100px;
+    .image_wrapper {
+        @media (min-width: $tablet-min-width-1) {
+            width: 74.5%;
+            margin: auto;
+        }
+        @media (min-width: $desktop-min-width) {
+            width: 55.4%;
+        }
+        @media (min-width: $desktop-min-width-1) {
+            width: 46.5%;
+        }
+        @media (min-width: $desktop-min-width-2) {
+            width: 40%;
+        }
+        img {
+            display: block;
+        }
+    }
+    .dots {
+        position: absolute;
+        height: 17px;
+        width: 17px;
+        z-index: 2;
+        img {
+            display: block;
+            width: inherit;
+            height: inherit;
+        }
+        &#dot1 {
+            top: 16.2%;
+            left: 45.7%;
+            @media (min-width: 375px) {
+                left: 46.2%;
+            }
+            @media (min-width: 412px) {
+                left: 46.6%;
+            }
+            @media (min-width: $tablet-min-width) {
+                left: 47%;
+            }
+            @media (min-width: $tablet-min-width-1) {
+                left: 47.9%;
+            }
+            @media (min-width: $desktop-min-width) {
+                left: 48.3%;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                left: 48.6%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                left: 48.8%;
+            }
+        }
+    }
+
+    .shining_dots {
+        display: none;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        &.show {
+            display: block;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../../public/blue_dot.png");
+            height: 12px;
+            width: 12px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            height: auto;
+            border-top: 4px solid $lightblue;
+        }
+        img {
+            display: block;
+            width: inherit;
+            height: inherit;
+            position: relative;
+            z-index: 1;
+        }
+        &#shining_dot1 {
+            top: 14.8%;
+            left: 43.5%;
+            @media (min-width: 375px) {
+                left: 44.2%;
+            }
+            @media (min-width: 412px) {
+                top: 15.1%;
+                left: 45%;
+            }
+            @media (min-width: $tablet-min-width) {
+                top: 15.3%;
+                left: 45.5%;
+            }
+            @media (min-width: $tablet-min-width-1) {
+                left: 46.7%;
+            }
+            @media (min-width: $desktop-min-width) {
+                left: 47.5%;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                left: 47.9%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                // transform: rotate(-20deg);
+                left: 48.2%;
+            }
+            &::before {
+                display: none;
+                @media (min-width: $desktop-min-width) {
+                    display: block;
+                    top: 7.5px;
+                    left: 105px;
+                }
+                @media (min-width: $desktop-min-width-1) {
+                    left: 185px;
+                }
+                @media (min-width: $desktop-min-width-2) {
+                    left: 255px;
+                }
+            }
+            &::after {
+                display: none;
+                @media (min-width: $desktop-min-width) {
+                    display: block;
+                    width: 100px;
+                    top: 38.2%;
+                    left: 50%;
+                }
+                @media (min-width: $desktop-min-width-1) {
+                    width: 180px;
+                }
+                @media (min-width: $desktop-min-width-2) {
+                    width: 250px;
+                }
+
+            }
+        }
+
+    }
+
+    .textboxs {
+        display: none;
+        position: absolute;
+        color: white;
+        background-color: $black;
+        border: 2px solid $white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        width: 90%;
+        max-width: 300px;
+        @media (min-width: $desktop-min-width) {
+            background-color: unset;
+            border: none;
+            padding: 0;
+        }
+        &.show {
+            display: block;
+        }
+        .title {
+            font-size: 30px;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        &#box1 {
+            top: 30%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                right: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                right: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                right: 4%;
+            }
+        }
+    }
+
+
+}

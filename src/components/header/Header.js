@@ -114,10 +114,9 @@ const Header = () => {
                         <H.MenuItem><Link to="/about/our-team/remedial-massage-therapist">Remedial Massage Therapist</Link></H.MenuItem>
                       </H.MenuList>
                     </H.MenuItem>
-                    <H.MenuItem><Link to="/about/pricing">Pricing</Link></H.MenuItem>
                   </H.MenuList>
                 </H.MenuItem>
-                <H.MenuItem>
+                <H.MenuItem className="expandable">
                   <Link to="/services">Services</Link>
                   <H.MenuList className="level-1">
                     <H.MenuItem className="expandable">
@@ -133,13 +132,10 @@ const Header = () => {
                   </H.MenuList>
                 </H.MenuItem>
                 <H.MenuItem>
-                  <Link to="/conditions">Conditions</Link>
-                </H.MenuItem>
-                {/* <H.MenuItem>
-                  <Link to="/projects">Projects</Link>
-                </H.MenuItem> */}
+                  <Link to="/fees">Fees</Link>
+                  </H.MenuItem>
                 <H.MenuItem>
-                  <Link to="/understanding-the-pains">Understanding the Pains</Link>
+                  <Link to="/conditions">Conditions</Link>
                 </H.MenuItem>
                 <H.MenuItem>
                   <Link to="/contact">Contact</Link>
@@ -172,7 +168,6 @@ const Header = () => {
                     <H.MobileMenuItem><Link to="/about/our-team/remedial-massage-therapist" onClick={() => changeLocation('/about/our-team/remedial-massage-therapist')}>Remedial Massage Therapist</Link></H.MobileMenuItem>
                   </H.MobileMenuList>
                 </H.MobileMenuItem>
-                <H.MobileMenuItem><Link to="/pricing" onClick={() => changeLocation('/pricing')}>Pricing</Link></H.MobileMenuItem>
               </H.MobileMenuList>
             </H.MobileMenuItem>
             <H.MobileMenuItem style={{ paddingBottom: state.services ? "0" : "0.5rem" }}>
@@ -199,13 +194,10 @@ const Header = () => {
               </H.MobileMenuList>
             </H.MobileMenuItem>
             <H.MobileMenuItem>
-              <Link to="/conditions" onClick={() => changeLocation('/conditions')}>Conditions</Link>
+              <Link to="/fees" onClick={() => changeLocation('/fees')}>Fees</Link>
             </H.MobileMenuItem>
-            {/* <H.MobileMenuItem>
-              <Link to="/projects" onClick={() => changeLocation('/projects')}>Projects</Link>
-            </H.MobileMenuItem> */}
             <H.MobileMenuItem>
-              <Link to="/contact" onClick={() => changeLocation('/understanding-the-pains')}>Understanding the Pains</Link>
+              <Link to="/conditions" onClick={() => changeLocation('/conditions')}>Conditions</Link>
             </H.MobileMenuItem>
             <H.MobileMenuItem>
               <Link to="/contact" onClick={() => changeLocation('/contact')}>Contact</Link>
