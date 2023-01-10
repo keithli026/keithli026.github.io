@@ -1,5 +1,70 @@
 @import "../variable";
-
+@mixin dot-left-position($default-left, $left320, $left375, $left412, $left450, $left500, $left576, $left768, $left992, $left1200, $left1400) {
+    left: $default-left;
+    @media (min-width: 320px) {
+        left: $left320;
+    }
+    @media (min-width: 375px) {
+        left: $left375;
+    }
+    @media (min-width: 412px) {
+        left: $left412;
+    }
+    @media (min-width: 450px) {
+        left: $left450;
+    }
+    @media (min-width: 500px) {
+        left: $left500;
+    }
+    @media (min-width: $tablet-min-width) {
+        left: $left576;
+    }
+    @media (min-width: $tablet-min-width-1) {
+        left: $left768;
+    }
+    @media (min-width: $desktop-min-width) {
+        left: $left992;
+    }
+    @media (min-width: $desktop-min-width-1) {
+        left: $left1200;
+    }
+    @media (min-width: $desktop-min-width-2) {
+        left: $left1400;
+    }
+}
+@mixin dot-top-position($default-top, $top320, $top375, $top412, $top450, $top500, $top576, $top768, $top992, $top1200, $top1400) {
+    top: $default-top;
+    @media (min-width: 320px) {
+        top: $top320;
+    }
+    @media (min-width: 375px) {
+        top: $top375;
+    }
+    @media (min-width: 412px) {
+        top: $top412;
+    }
+    @media (min-width: 450px) {
+        top: $top450;
+    }
+    @media (min-width: 500px) {
+        top: $top500;
+    }
+    @media (min-width: $tablet-min-width) {
+        top: $top576;
+    }
+    @media (min-width: $tablet-min-width-1) {
+        top: $top768;
+    }
+    @media (min-width: $desktop-min-width) {
+        top: $top992;
+    }
+    @media (min-width: $desktop-min-width-1) {
+        top: $top1200;
+    }
+    @media (min-width: $desktop-min-width-2) {
+        top: $top1400;
+    }
+}
 .bodychart {
     background-image: url("../../public/bodychart_bg.jpg");
     position: relative;
@@ -24,38 +89,19 @@
     }
     .dots {
         position: absolute;
-        height: 17px;
-        width: 17px;
-        z-index: 2;
+        height: 12px;
+        width: 12px;
+        &.hide {
+            display: none;
+        }
         img {
             display: block;
             width: inherit;
             height: inherit;
         }
         &#dot1 {
-            top: 16.2%;
-            left: 45.7%;
-            @media (min-width: 375px) {
-                left: 46.2%;
-            }
-            @media (min-width: 412px) {
-                left: 46.6%;
-            }
-            @media (min-width: $tablet-min-width) {
-                left: 47%;
-            }
-            @media (min-width: $tablet-min-width-1) {
-                left: 47.9%;
-            }
-            @media (min-width: $desktop-min-width) {
-                left: 48.3%;
-            }
-            @media (min-width: $desktop-min-width-1) {
-                left: 48.6%;
-            }
-            @media (min-width: $desktop-min-width-2) {
-                left: 48.8%;
-            }
+            @include dot-left-position(46.4%, 46.7%, 47%, 47.2%, 47.2%, 47.2%, 47.4%, 47.9%, 48.6%, 48.8%, 49%);
+            top: 15.2%;
         }
     }
 
@@ -88,44 +134,20 @@
             z-index: 1;
         }
         &#shining_dot1 {
-            top: 14.8%;
-            left: 43.5%;
-            @media (min-width: 375px) {
-                left: 44.2%;
-            }
-            @media (min-width: 412px) {
-                top: 15.1%;
-                left: 45%;
-            }
-            @media (min-width: $tablet-min-width) {
-                top: 15.3%;
-                left: 45.5%;
-            }
-            @media (min-width: $tablet-min-width-1) {
-                left: 46.7%;
-            }
-            @media (min-width: $desktop-min-width) {
-                left: 47.5%;
-            }
-            @media (min-width: $desktop-min-width-1) {
-                left: 47.9%;
-            }
-            @media (min-width: $desktop-min-width-2) {
-                // transform: rotate(-20deg);
-                left: 48.2%;
-            }
+            @include dot-top-position(13.2%, 13.4%, 13.5%, 13.8%, 13.8%, 14.1%, 14.1%, 14.1%, 14%, 14.1%, 14.1%);
+            @include dot-left-position(43.5%, 44.3%, 44.6%, 45%, 45.4%, 45.6%, 45.7%, 46.7%, 47.7%, 48.1%, 48.4%);
             &::before {
                 display: none;
                 @media (min-width: $desktop-min-width) {
                     display: block;
-                    top: 7.5px;
-                    left: 105px;
+                    top: 9px;
+                    left: 123px;
                 }
                 @media (min-width: $desktop-min-width-1) {
-                    left: 185px;
+                    left: 203px;
                 }
                 @media (min-width: $desktop-min-width-2) {
-                    left: 255px;
+                    left: 223px;
                 }
             }
             &::after {
@@ -133,14 +155,14 @@
                 @media (min-width: $desktop-min-width) {
                     display: block;
                     width: 100px;
-                    top: 38.2%;
-                    left: 50%;
+                    top: 45.2%;
+                    left: 24px;
                 }
                 @media (min-width: $desktop-min-width-1) {
                     width: 180px;
                 }
                 @media (min-width: $desktop-min-width-2) {
-                    width: 250px;
+                    width: 200px;
                 }
 
             }
@@ -171,7 +193,7 @@
         }
         .description {
             font-size: 16px;
-            line-height: 1.5;
+            line-height: 1.3;
         }
         &#box1 {
             top: 30%;
@@ -202,7 +224,7 @@
             }
             @media (min-width: $desktop-min-width-2) {
                 top: 7%;
-                right: 4%;
+                right: 7%;
             }
         }
     }

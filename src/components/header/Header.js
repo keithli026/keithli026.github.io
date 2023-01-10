@@ -97,9 +97,9 @@ const Header = () => {
       <H.Header id="header">
         <Container sm100 md100 ref={refHeader}>
           <Row spaceBetween alignItemsCenter>
-            <H.LogoDiv>
+            <H.LogoDiv id="logo">
               <a href="/">
-                <H.Logo alt="site-logo" src="https://movephysiotherapy.com.au/wp-content/uploads/2021/05/Move_P_F_Logo-Black_Blue-removebg-preview.png"></H.Logo>
+                <H.Logo alt="site-logo" src={process.env.PUBLIC_URL + '/logo.png'}></H.Logo>
               </a>
             </H.LogoDiv>
             <H.MenuWrapper>

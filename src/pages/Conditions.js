@@ -3,6 +3,7 @@ import { Container } from "../GlobalStyle";
 import Breadcrumb from "../components/Breadcrumb";
 import "./conditions.scss";
 const Conditions = () => {
+  const dot = useRef(null);
   const shiningDot = useRef(null);
   const textBox = useRef(null);
   const [open, setOpen] = useState(false);
@@ -12,9 +13,11 @@ const Conditions = () => {
   useEffect(()=> {
     // console.log(open);
     if(open) {
+      dot.current.classList.add("hide")
       shiningDot.current.classList.add("show");
       textBox.current.classList.add("show");
     } else {
+      dot.current.classList.remove("hide")
       shiningDot.current.classList.remove("show");
       textBox.current.classList.remove("show");
     }
@@ -27,7 +30,7 @@ const Conditions = () => {
           <div className='image_wrapper'>
           <img src={process.env.PUBLIC_URL + '/bodychart.png'} alt="body chart"></img>
           </div>
-          <div className="dots" id="dot1" onClick={showDetails}>
+          <div className="dots" id="dot1" ref={dot} onClick={showDetails}>
             <img src={process.env.PUBLIC_URL + '/dot.png'} alt="dot"></img>
           </div>
           <div className="shining_dots" id="shining_dot1" ref={shiningDot} onClick={showDetails}>
