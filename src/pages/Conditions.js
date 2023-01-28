@@ -6,7 +6,7 @@ const Conditions = () => {
   const dot = useRef([]);
   const shiningDot = useRef([]);
   const textBox = useRef([]);
-  const list = [...Array(3).keys()];
+  const list = [...Array(16).keys()];
   const initialState = {
     dot0: false,
     dot1: false,
