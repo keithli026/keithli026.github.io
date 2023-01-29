@@ -140,8 +140,8 @@
             top: 44.5%;
         }
         &#dot10 {
-            @include dot-left-position(54.5%, 54.5%, 55%, 55.5%, 56%, 56%, 56%, 54.8%, 53.4%, 52.9%, 52.5%);
-            top: 45%;
+            @include dot-left-position(39.5%, 39.5%, 40%, 40.5%, 41%, 41%, 41%, 43%, 44.8%, 45.8%, 46.3%);
+            top: 45.3%;
         }
         &#dot11 {
             @include dot-left-position(55.3%, 55.6%, 55.7%, 56%, 56%, 56.25%, 56.3%, 54.7%, 53.5%, 52.9%, 52.5%);
@@ -166,7 +166,7 @@
     }
 
     .shining_dots {
-        // display: none;
+        display: none;
         position: absolute;
         height: 30px;
         width: 30px;
@@ -269,13 +269,13 @@
                 @media (min-width: $desktop-min-width) {
                     display: block;
                     top: 9px;
-                    left: 123px;
+                    right: 123px;
                 }
                 @media (min-width: $desktop-min-width-1) {
-                    left: 203px;
+                    right: 203px;
                 }
                 @media (min-width: $desktop-min-width-2) {
-                    left: 223px;
+                    right: 223px;
                 }
             }
             &::after {
@@ -284,7 +284,7 @@
                     display: block;
                     width: 100px;
                     top: 45.2%;
-                    left: 24px;
+                    right: 24px;
                 }
                 @media (min-width: $desktop-min-width-1) {
                     width: 180px;
@@ -371,13 +371,13 @@
                 @media (min-width: $desktop-min-width) {
                     display: block;
                     top: 9px;
-                    left: 123px;
+                    right: 123px;
                 }
                 @media (min-width: $desktop-min-width-1) {
-                    left: 203px;
+                    right: 203px;
                 }
                 @media (min-width: $desktop-min-width-2) {
-                    left: 223px;
+                    right: 223px;
                 }
             }
             &::after {
@@ -386,7 +386,7 @@
                     display: block;
                     width: 100px;
                     top: 45.2%;
-                    left: 24px;
+                    right: 24px;
                 }
                 @media (min-width: $desktop-min-width-1) {
                     width: 180px;
@@ -534,20 +534,20 @@
             }
         }
         &#shining_dot10 {
-            @include dot-top-position(42.8%, 43.2%, 43.4%, 43.4%, 43.6%, 43.9%, 43.8%, 43.8%, 43.8%, 43.8%, 43.8%);
-            @include dot-left-position(51.5%, 51.9%, 52.4%, 53.4%, 54.1%, 54.2%, 54.2%, 53.6%, 52.6%, 52.2%, 51.8%);
+            @include dot-top-position(43.2%, 43.2%, 43.6%, 43.8%, 43.9%, 43.9%, 44.2%, 44.1%, 44.1%, 44.1%, 44.1%);
+            @include dot-left-position(36.5%, 36.8%, 37.3%, 38.2%, 39.2%, 39.2%, 39.4%, 41.7%, 43.9%, 45%, 45.6%);
             &::before {
                 display: none;
                 @media (min-width: $desktop-min-width) {
                     display: block;
                     top: 9px;
-                    left: 123px;
+                    right: 123px;
                 }
                 @media (min-width: $desktop-min-width-1) {
-                    left: 203px;
+                    right: 203px;
                 }
                 @media (min-width: $desktop-min-width-2) {
-                    left: 223px;
+                    right: 223px;
                 }
             }
             &::after {
@@ -556,7 +556,7 @@
                     display: block;
                     width: 100px;
                     top: 45.2%;
-                    left: 24px;
+                    right: 24px;
                 }
                 @media (min-width: $desktop-min-width-1) {
                     width: 180px;
@@ -568,8 +568,8 @@
             }
         }
         &#shining_dot11 {
-            @include dot-top-position(30.2%, 30.4%, 30.5%, 30.8%, 30.8%, 30.1%, 30.1%, 30.1%, 30%, 30.1%, 30.1%);
-            @include dot-left-position(43.5%, 44.3%, 44.6%, 45%, 45.4%, 45.6%, 45.7%, 46.7%, 47.7%, 48.1%, 48.4%);
+            @include dot-top-position(54.7%, 55%, 55.2%, 55.5%, 55.5%, 55.7%, 55.7%, 55.7%, 55.7%, 55.7%, 55.7%);
+            @include dot-left-position(52%, 53%, 53.3%, 53.7%, 53.9%, 54.5%, 54.7%, 53.4%, 52.6%, 52.1%, 51.8%);
             &::before {
                 display: none;
                 @media (min-width: $desktop-min-width) {
@@ -602,20 +602,20 @@
             }
         }
         &#shining_dot12 {
-            @include dot-top-position(13.2%, 13.4%, 13.5%, 13.8%, 13.8%, 14.1%, 14.1%, 14.1%, 14%, 14.1%, 14.1%);
-            @include dot-left-position(43.5%, 44.3%, 44.6%, 45%, 45.4%, 45.6%, 45.7%, 46.7%, 47.7%, 48.1%, 48.4%);
+            @include dot-top-position(65.7%, 66.7%, 66.9%, 67.4%, 67.4%, 67.6%, 67.6%, 67.6%, 67.6%, 67.6%, 67.6%);
+            @include dot-left-position(38.5%, 39.1%, 39.6%, 40.2%, 40.9%, 40.9%, 41.2%, 43.6%, 45.2%, 45.9%, 46.4%);
             &::before {
                 display: none;
                 @media (min-width: $desktop-min-width) {
                     display: block;
                     top: 9px;
-                    left: 123px;
+                    right: 123px;
                 }
                 @media (min-width: $desktop-min-width-1) {
-                    left: 203px;
+                    right: 203px;
                 }
                 @media (min-width: $desktop-min-width-2) {
-                    left: 223px;
+                    right: 223px;
                 }
             }
             &::after {
@@ -624,7 +624,7 @@
                     display: block;
                     width: 100px;
                     top: 45.2%;
-                    left: 24px;
+                    right: 24px;
                 }
                 @media (min-width: $desktop-min-width-1) {
                     width: 180px;
@@ -636,8 +636,8 @@
             }
         }
         &#shining_dot13 {
-            @include dot-top-position(30.2%, 30.4%, 30.5%, 30.8%, 30.8%, 30.1%, 30.1%, 30.1%, 30%, 30.1%, 30.1%);
-            @include dot-left-position(43.5%, 44.3%, 44.6%, 45%, 45.4%, 45.6%, 45.7%, 46.7%, 47.7%, 48.1%, 48.4%);
+            @include dot-top-position(78.8%, 79%, 79%, 79.5%, 79.6%, 79.9%, 79.8%, 79.8%, 79.8%, 79.8%, 79.8%);
+            @include dot-left-position(50.5%, 50.9%, 51.6%, 51.8%, 52.3%, 52.5%, 52.5%, 52%, 51.4%, 51.25%, 51.1%);
             &::before {
                 display: none;
                 @media (min-width: $desktop-min-width) {
@@ -670,20 +670,20 @@
             }
         }
         &#shining_dot14 {
-            @include dot-top-position(13.2%, 13.4%, 13.5%, 13.8%, 13.8%, 14.1%, 14.1%, 14.1%, 14%, 14.1%, 14.1%);
-            @include dot-left-position(43.5%, 44.3%, 44.6%, 45%, 45.4%, 45.6%, 45.7%, 46.7%, 47.7%, 48.1%, 48.4%);
+            @include dot-top-position(83.9%, 85%, 85.5%, 86.5%, 86.8%, 86.8%, 86.8%, 86.8%, 86.8%, 86.8%, 86.8%);
+            @include dot-left-position(39.5%, 39.5%, 40%, 40.5%, 41%, 41.8%, 41.8%, 43.7%, 45.5%, 46.1%, 46.7%);
             &::before {
                 display: none;
                 @media (min-width: $desktop-min-width) {
                     display: block;
                     top: 9px;
-                    left: 123px;
+                    right: 123px;
                 }
                 @media (min-width: $desktop-min-width-1) {
-                    left: 203px;
+                    right: 203px;
                 }
                 @media (min-width: $desktop-min-width-2) {
-                    left: 223px;
+                    right: 223px;
                 }
             }
             &::after {
@@ -692,7 +692,7 @@
                     display: block;
                     width: 100px;
                     top: 45.2%;
-                    left: 24px;
+                    right: 24px;
                 }
                 @media (min-width: $desktop-min-width-1) {
                     width: 180px;
@@ -704,20 +704,20 @@
             }
         }
         &#shining_dot15 {
-            @include dot-top-position(30.2%, 30.4%, 30.5%, 30.8%, 30.8%, 30.1%, 30.1%, 30.1%, 30%, 30.1%, 30.1%);
-            @include dot-left-position(43.5%, 44.3%, 44.6%, 45%, 45.4%, 45.6%, 45.7%, 46.7%, 47.7%, 48.1%, 48.4%);
+            @include dot-top-position(89.5%, 89.5%, 89.8%, 89.9%, 90%, 90.4%, 90.4%, 90.5%, 90.5%, 90.5%, 90.5%);
+            @include dot-left-position(38.5%, 39.5%, 39.9%, 40.3%, 40.5%, 41.2%, 41.2%, 43.5%, 45%, 46%, 46.5%);
             &::before {
                 display: none;
                 @media (min-width: $desktop-min-width) {
                     display: block;
                     top: 9px;
-                    left: 123px;
+                    right: 123px;
                 }
                 @media (min-width: $desktop-min-width-1) {
-                    left: 203px;
+                    right: 203px;
                 }
                 @media (min-width: $desktop-min-width-2) {
-                    left: 223px;
+                    right: 223px;
                 }
             }
             &::after {
@@ -726,7 +726,7 @@
                     display: block;
                     width: 100px;
                     top: 45.2%;
-                    left: 24px;
+                    right: 24px;
                 }
                 @media (min-width: $desktop-min-width-1) {
                     width: 180px;
@@ -767,10 +767,12 @@
             line-height: 1.3;
         }
         &#box0 {
-            top: 30%;
+            top: 0;
+            bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
+            height: fit-content;
             @media (min-width: 375px) {
             
             }
@@ -799,10 +801,80 @@
             }
         }
         &#box1 {
-            top: 30%;
+            top: 0;
+            bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                left: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                left: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                left: 7%;
+            }
+        }
+        &#box2 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                left: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                left: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                left: 7%;
+            }
+        }
+        &#box3 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
             @media (min-width: 375px) {
             
             }
@@ -828,6 +900,414 @@
             @media (min-width: $desktop-min-width-2) {
                 top: 7%;
                 right: 7%;
+            }
+        }
+        &#box4 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                left: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                left: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                left: 7%;
+            }
+        }
+        &#box5 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                left: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                left: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                left: 7%;
+            }
+        }
+        &#box6 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                right: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                right: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                right: 7%;
+            }
+        }
+        &#box7 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                right: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                right: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                right: 7%;
+            }
+        }
+        &#box8 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                right: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                right: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                right: 7%;
+            }
+        }
+        &#box9 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                left: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                left: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                left: 7%;
+            }
+        }
+        &#box10 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                left: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                left: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                left: 7%;
+            }
+        }
+        &#box11 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                right: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                right: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                right: 7%;
+            }
+        }
+        &#box12 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                left: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                left: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                left: 7%;
+            }
+        }
+        &#box13 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                right: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                right: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                right: 7%;
+            }
+        }
+        &#box14 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                left: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                left: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                left: 7%;
+            }
+        }
+        &#box15 {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: fit-content;
+            @media (min-width: 375px) {
+            
+            }
+            @media (min-width: 412px) {
+             
+            }
+            @media (min-width: $tablet-min-width) {
+              
+            }
+            @media (min-width: $tablet-min-width-1) {
+                
+            }
+            @media (min-width: $desktop-min-width) {
+                top: 7%;
+                left: unset;
+                left: 4%;
+                margin: unset;
+            }
+            @media (min-width: $desktop-min-width-1) {
+                top: 7%;
+                left: 4%;
+            }
+            @media (min-width: $desktop-min-width-2) {
+                top: 7%;
+                left: 7%;
             }
         }
     }
